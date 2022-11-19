@@ -4,7 +4,8 @@ html, body {
 body {
     background-color: #f1f1f1;
     display: flex;
-    justify-content: center;
+    justify-content: center;    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .wrapper {
@@ -17,14 +18,16 @@ body {
     display: flex;
     flex-flow: column;
     width: 85%;
+    background-color: white;
 }
 .menu {
     width: 15%;
-    background-color: aqua;
+    background-color: #c90043;
     padding: 10px 20px 0px;
 }
 .header {
-    background-color: rgb(5, 108, 108);
+    background-color: white;
+    align-self: center;
     min-height: 150px;
 }
 .content {
@@ -33,6 +36,65 @@ body {
     padding: 20px;
 }
 .footer {
-    background-color: rgb(99, 56, 240);
-    min-height: 150px;
+    text-align: center;
+    background-color: #ecaac0;
+    min-height: 40px;
+}
+a{
+    text-decoration: none;
+}
+.menu a{
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+    padding: 0px 5px 0px 5px;
+}
+.menu a:visited{            
+    text-decoration: none;
+    color: white;
+}
+.menu a:hover{
+    background-color: white;
+    color: #5f0020;
+}    
+.menu li{
+    list-style-type: none;
+}
+#ativo{
+    color: #f393b3;
+}     
+table thead th{
+    background-color: #5f0020;            
+    color: white;
+}
+table td{
+    height: 30px;
+    width: 150px;            
+}
+table tbody tr:nth-child(even){
+    background-color: #cab3bb;
+}
+form{
+    width: 600px;
+}
+.row{
+    display: block;
+    float: left;
+    width: 300px;
+}
+label{
+    display: inline;
+    font-size: 12px;
+    font-weight: bold;
+}
+input .row{    
+    margin: 0px 5px 20px 5px;
+}
+textarea{
+    width: 550px;
+    height: 200px;
+    resize: none;
+}
+.inputfield{
+    width: 250px;
 }
